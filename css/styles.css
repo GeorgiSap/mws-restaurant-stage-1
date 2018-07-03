@@ -4,7 +4,7 @@ html, body, main {
   height: 100%;
 }
 #map-container {
-  height: 80%;
+  height: 78%;
 }
 #maincontent {
   display: flex
@@ -46,7 +46,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #maincontent {
   background-color: #f3f3f3;
-  min-height: 100%;
 }
 #footer {
   background-color: #444;
@@ -115,16 +114,17 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 20vh;
+  height: 22vh;
   background-color: #3397DB;
   align-items: center;
 }
 .filter-options h2 {
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
+  padding-top: 5px; 
 }
 .filter-options select {
   background-color: white;
@@ -282,8 +282,37 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
-
 header, footer, ul{
   display: none;
   visibility:hidden;
+}
+
+@media screen and (min-width: 460px) {
+    header {
+      height: 6%;
+      display: block;
+      visibility: visible;
+    }
+    main {
+      height: 94%;
+    }
+    #map-container {
+      height: 83%;
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width: 599px) {
+    .filter-options select {
+      height: 36%;
+      width: 45%;
+    }
+    .filter-options {
+      height: 16vh;
+    }
+}
+
+@media screen and (min-width: 600px) {
+  #map-container {
+    height: 76.6%;
+  }
 }
