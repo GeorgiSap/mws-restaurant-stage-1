@@ -291,53 +291,62 @@ header, footer {
   visibility:hidden;
 }
 
-  @media screen and (min-width: 460px) {
-    header {
-      height: 6%;
-      display: block;
-      visibility: visible;
-    }
-    main {
-      height: 94%;
-    }
-    #map-container {
-      height: 83%;
-    }
+@media screen and (min-width: 460px) {
+  header {
+    height: 6%;
+    display: block;
+    visibility: visible;
   }
+  main {
+    height: 94%;
+  }
+  #map-container {
+    height: 83%;
+  }
+}
 
-  @media screen and (min-width: 460px) and (max-width: 649px) {
-    .filter-options select {
-      height: 36%;
-      width: 45%;
-    }
-    .filter-options {
-      height: 16vh;
-    }
+@media screen and (min-width: 460px) and (max-width: 599px) {
+  .filter-options select {
+    height: 36%;
+    width: 45%;
   }
+  .filter-options {
+    height: 16vh;
+  }
+}
 
-  @media screen and (min-width: 650px) {
-    #maincontent {
-      display: flex;
-      flex-wrap: nowrap;
-    }
-    #map-container {
-      height: 76.6%;
-      order: 1;
-      width: calc(100% - 350px)
-    }
-    ul {
-      display: block;
-      visibility: visible;
-    }
-    .restaurants-bar {
-      display: block;
-      visibility: visible;
-      height: 100%;
-      width: 350px;
-      overflow-y:scroll;
-    }
-    .restaurants-bar img {
-      width: 120px;
-      float: right;
-    }
+@media screen and (min-width: 600px) {
+  #maincontent {
+    display: flex;
+    flex-wrap: nowrap;
   }
+  #map-container {
+    height: 76.6%;
+    order: 1;
+    width: 50%;
+  }
+  ul {
+    display: block;
+    visibility: visible;
+  }
+  .restaurants-bar {
+    display: block;
+    visibility: visible;
+    height: 100%;
+    width: 50%;
+    overflow-y:scroll;
+  }
+  .restaurants-bar img {
+    width: 120px;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  #map-container {
+    width: calc(100% - 375px)
+  }
+  .restaurants-bar {
+    width: 375px;
+  }
+}
