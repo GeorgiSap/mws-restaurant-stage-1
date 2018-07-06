@@ -448,6 +448,21 @@ nav h1 a {
   }
 }
 
+@media screen and (min-width: 840px) {
+  #map-container {
+    height: 83%;
+  }
+
+  .filter-options {
+    height: 16vh;
+  }
+
+  .filter-options select {
+    height: 36%;
+    width: 45%;
+  }
+}
+
 /* ====================== Focus ====================== */
 .restaurant-bar li a:focus {
   outline : none;  
