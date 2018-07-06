@@ -469,3 +469,18 @@ header a:focus {
 header a:focus {
   color : #ee814f;
 }
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #3397DB;
+  padding: 8px; 
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+  color: white;
+  outline : 3px solid #ee814f;
+}
