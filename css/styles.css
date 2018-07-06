@@ -202,7 +202,7 @@ nav h1 a {
   height: 100px;
 }
 
-#restaurants-list li a h1 {
+#restaurants-list li a h3 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 10pt;
