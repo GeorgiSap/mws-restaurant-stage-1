@@ -468,12 +468,15 @@ nav h1 a {
   outline : none;  
 }
 
-.restaurant-bar li:focus-within,
-#breadcrumb a:focus,
+/*
 header a:focus {
   outline : 3px solid #76b4e5; 
-}
+}*/
 
+.skip-link:focus,
+header a:focus,
+.restaurant-bar li:focus-within,
+#breadcrumb a:focus,
 #map:focus,
 #map img:focus,
 #map a:focus,
@@ -482,7 +485,7 @@ header a:focus {
 }
 
 header a:focus {
-  color : #ee814f;
+  color : white;
 }
 
 .skip-link {
@@ -497,5 +500,4 @@ header a:focus {
 .skip-link:focus {
   top: 0;
   color: white;
-  outline : 3px solid #ee814f;
 }
