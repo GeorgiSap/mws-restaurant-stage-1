@@ -12,7 +12,6 @@ footer,
 .inside #map-container,
 #breadcrumb {
   display: none;
-  visibility: hidden;
 }
 
 #map-container {
@@ -338,7 +337,6 @@ header h1 a {
   header {
     height: 6%;
     display: block;
-    visibility: visible;
   }
 
   main {
@@ -398,7 +396,6 @@ header h1 a {
 
   .inside #map-container {
     display: block;
-    visibility: visible;
   }
 
   #breadcrumb {
