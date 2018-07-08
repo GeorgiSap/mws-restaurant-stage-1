@@ -226,7 +226,7 @@ section {
 
 #restaurant-address {
   font-size: 12pt;
-  margin: 10px 0px;
+  margin: 7px 0px 5px;
 }
 
 #restaurant-cuisine {
@@ -235,7 +235,7 @@ section {
   font-size: 12pt;
   font-weight: 300;
   letter-spacing: 10px;
-  margin: 0 0 20px;
+  margin: 0 0 5px;
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
@@ -370,7 +370,14 @@ header h1{
 @media screen and (min-width: 460px) {
   #restaurant-name {
     font-size: 18pt;
-margin: 10px 0 10px;
+    margin: 10px 0 10px;
+  }
+
+  #restaurant-cuisine {
+    margin: 0 0 20px;
+  }
+  #restaurant-address {
+  margin: 10px 0px;
 }
 }
 
