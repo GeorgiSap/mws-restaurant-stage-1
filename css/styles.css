@@ -331,22 +331,20 @@ section {
     margin-left: auto !important; 
     margin-right: 0 !important; 
     text-align: right;
-    font-size: 1em;
+    font-size: 11px;
     line-height: 1;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: normal;
     text-align: center;
     background-color: white;
-    padding-top: 1px !important; 
-    padding-bottom: 1px !important; 
-    padding-left: 3px !important; 
-    padding-right: 5px !important; 
-    opacity: 0.6;
+    padding: 2px 4px !important; 
+
+    opacity: 0.75;
   }
 
   footer span a {
-   color: black;
+   color: #5096bb;
  }
 
  .inside header {
@@ -362,6 +360,24 @@ section {
 .inside #map-container {
   position: static;
 }
+
+.inside .leaflet-control-attribution {
+  display: none;
+}
+
+footer span {
+  position: fixed;
+}
+
+  .inside header {
+    position: fixed;
+    z-index: 3000;
+  }
+
+  .restaurant-info {
+    position: absolute;
+    top : 6%;
+  }
 
 /* ====================== Media Queries ====================== */
 @media screen and (min-width: 320px) and (max-width: 459px) {
@@ -421,6 +437,12 @@ section {
   header {
     height: 6%;
     background-color: #444;
+  }
+  .inside header {
+    position: static;
+  }
+  .restaurant-info {
+    position: static;
   }
 
   #maincontent, 
