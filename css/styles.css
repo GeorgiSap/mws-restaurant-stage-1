@@ -12,7 +12,7 @@ main {
 }
 
 .restaurant-bar, 
-.inside #map-container,
+/*.inside #map-container,*/
 #breadcrumb {
   display: none;
 }
@@ -211,10 +211,10 @@ section {
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 18pt;
+  font-size: 16pt;
   font-weight: 200;
   letter-spacing: 0;
-  margin: 10px 0 10px;
+  margin: 0px 0 0px;
   text-transform: uppercase;
   line-height: 1.1;
   text-align: center;
@@ -339,14 +339,22 @@ header h1{
 
 .restaurant-info {
   position: absolute;
+  top : 36%;
+}
+
+.inside #map-container {
+  height: 30%;
+  position: relative;
   top : 6%;
 }
+
+
 
 /* ====================== Media Queries ====================== */
 @media screen and (min-width: 320px) and (max-width: 459px) {
   .inside #restaurant-img {
     object-fit: cover;
-    height: 230px;
+    height: 150px;
     margin-bottom: 5px;
   }
 
@@ -359,7 +367,21 @@ header h1{
   }
 }
 
+@media screen and (min-width: 460px) {
+  #restaurant-name {
+    font-size: 18pt;
+margin: 10px 0 10px;
+}
+}
+
+
 @media screen and (min-width: 460px) and (max-width: 599px) {
+  .inside #map-container {
+    height: 40%;
+  }
+  .restaurant-info {
+    top : 46%;
+  }
   #map {
     height: 83%;
   }
@@ -394,6 +416,15 @@ header h1{
 }
 
 @media screen and (min-width: 600px) {
+  .restaurant-info {
+    top : 46%;
+  }
+
+  .inside #map-container {
+    height: 100%;
+    position: static;
+  }
+
   main {
     height: 94%;
   }
