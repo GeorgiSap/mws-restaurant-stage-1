@@ -13,19 +13,19 @@
 </head>
 
 <body>
-  <a href="#neighborhoods-select" class="skip-link">>Skip to Filter</a>
-  <header>
-    <h1 id="header-heading"><a href="/"><i class="fas fa-utensils"></i> Restaurant Reviews</a></h1>
+  <a href="#filter-results" class="skip-link">>Skip to Filter</a>
+  <header class="header">
+    <h1 id="header-heading" class="header-heading"><a href="/"><i class="fas fa-utensils"></i> Restaurant Reviews</a></h1>
   </header>
   <main id="maincontent">
     <section id="map-container">
       <div id="map"></div>
       <div id="filter-results" class="filter-options" tabindex="-1">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" class="filter-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" class="filter-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
