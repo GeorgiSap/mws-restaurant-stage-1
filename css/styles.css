@@ -370,7 +370,7 @@ header h1{
 @media screen and (min-width: 460px) {
   #restaurant-name {
     font-size: 18pt;
-    margin: 10px 0 10px;
+    margin: 5px 0 7px;
   }
 
   #restaurant-cuisine {
