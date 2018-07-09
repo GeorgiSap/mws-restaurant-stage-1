@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   initMap(); // added 
   fetchNeighborhoods();
   fetchCuisines();
+  addAriaLabelToMap();
 });
 
 /**
@@ -25,6 +26,16 @@ initServiceWorker = () => {
   }).catch(function() {
     console.log('Service Worker registration failed.')
   });  
+}
+
+
+/**
+ * Adds aria label to maps
+ */
+addAriaLabelToMap = () => {
+  const map =  document.getElementById('map');
+  map.setAttribute("role", "navigation");
+  map.setAttribute("aria-label", "map");
 }
 
 
@@ -180,7 +191,7 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-home-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant, 'small');
-  image.alt = restaurant.name;
+  image.alt = restaurant.cuisine_type + ' restaurant';
   more.append(image);
 
   const name = document.createElement('h3');

@@ -6,7 +6,10 @@ var newMap;
  */
 document.addEventListener('DOMContentLoaded', (event) => {  
   initMap();
+  addAriaLabelToMap();
 });
+
+
 
 /**
  * Initialize leaflet map
@@ -35,6 +38,15 @@ initMap = () => {
   });
 }  
  
+/**
+ * Adds aria label to maps
+ */
+addAriaLabelToMap = () => {
+  const map =  document.getElementById('map');
+  map.setAttribute("role", "navigation");
+  map.setAttribute("aria-label", "map");
+}
+
 /* window.initMap = () => {
   fetchRestaurantFromURL((error, restaurant) => {
     if (error) { // Got an error!

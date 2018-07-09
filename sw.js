@@ -33,27 +33,7 @@ self.addEventListener('install', function(event) {
 				'/js/restaurant_info.js',
 				'/js/dbhelper.js',
 				'/fonts/lobster.otf',
-				'/data/restaurants.json',
-				'/img/1x/1.jpg',
-				'/img/1x/2.jpg',
-				'/img/1x/3.jpg',
-				'/img/1x/4.jpg',
-				'/img/1x/5.jpg',
-				'/img/1x/6.jpg',
-				'/img/1x/7.jpg',
-				'/img/1x/8.jpg',
-				'/img/1x/9.jpg',
-				'/img/1x/10.jpg',
-				'/img/small/1.jpg',
-				'/img/small/2.jpg',
-				'/img/small/3.jpg',
-				'/img/small/4.jpg',
-				'/img/small/5.jpg',
-				'/img/small/6.jpg',
-				'/img/small/7.jpg',
-				'/img/small/8.jpg',
-				'/img/small/9.jpg',
-				'/img/small/10.jpg'
+				'/data/restaurants.json'
 				])
 		})
 		);
