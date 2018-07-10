@@ -11,7 +11,8 @@
 	* [Small viewport](#small-viewport)
 - [Resources](#resources)
 	* [Map](#map)
-	* [Fonts & Glyphicons](#fonts-&-glyphicons)
+	* [Fonts](#fonts)
+	* [Glyphicons](#glyphicons)
 
 ### Getting started
 
@@ -45,13 +46,15 @@
 
 ##### Map
 
-* [Leaflet.js](https://leafletjs.com/) and [Mapbox](https://www.mapbox.com/).
+[Leaflet.js](https://leafletjs.com/) and [Mapbox](https://www.mapbox.com/).
 
-##### Fonts & Glyphicons
+##### Fonts
 
-* [Lobster](https://fonts.google.com/specimen/Lobster) 
+[Lobster](https://fonts.google.com/specimen/Lobster) 
 
-* [Font Awesome](https://fontawesome.com/)
+##### Glyphicons
+
+[Font Awesome](https://fontawesome.com/)
 
 
 
