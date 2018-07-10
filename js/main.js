@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     initMap(); // added 
     fetchNeighborhoods();
     fetchCuisines();
-    addAriaAttributesToMap();
 });
 
 /**
@@ -26,16 +25,6 @@ initServiceWorker = () => {
     ).catch(() =>
         console.log('Service Worker registration failed.')
     );
-}
-
-
-/**
- * Adds aria label to maps
- */
-addAriaAttributesToMap = () => {
-    const map = document.getElementById('map');
-    map.setAttribute("role", "navigation");
-    map.setAttribute("aria-label", "map");
 }
 
 

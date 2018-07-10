@@ -6,7 +6,6 @@ var newMap;
  */
 document.addEventListener('DOMContentLoaded', (event) => {
     initMap();
-    addAriaAttributesToMap();
 });
 
 
@@ -36,15 +35,6 @@ initMap = () => {
             DBHelper.mapMarkerForRestaurant(self.restaurant, self.newMap);
         }
     });
-}
-
-/**
- * Adds aria attributes to maps
- */
-addAriaAttributesToMap = () => {
-    const map = document.getElementById('map');
-    map.setAttribute("role", "navigation");
-    map.setAttribute("aria-label", "map");
 }
 
 /* window.initMap = () => {

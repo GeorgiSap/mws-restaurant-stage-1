@@ -21,13 +21,15 @@
 
     <main id="maincontent">
         <section id="map-container">
-            <div id="map"></div>
-            <div id="filter-results" class="filter-options" tabindex="-1">
-                <h2>Filter your search results</h2>
-                <select aria-labelledby="filter-results" id="neighborhoods-select" class="filter-select" name="neighborhoods" onchange="updateRestaurants()">
+            <div id="map" aria-label="location" role="application"></div>
+            <div id="filter-results" class="filter-options" tabindex="-1" aria-labelledby="filter-heading">
+                <h2 class="filter-heading">Filter your search results</h2>
+                <select aria-labelledby="filter-heading" id="neighborhoods-select" class="filter-select" 
+                name="neighborhoods" onchange="updateRestaurants()">
                     <option value="all">All Neighborhoods</option>
                 </select>
-                <select aria-labelledby="filter-results" id="cuisines-select" class="filter-select" name="cuisines" onchange="updateRestaurants()">
+                <select aria-labelledby="filter-heading" id="cuisines-select" class="filter-select" 
+                name="cuisines" onchange="updateRestaurants()">
                     <option value="all">All Cuisines</option>
                 </select>
             </div>
